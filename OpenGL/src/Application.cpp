@@ -25,10 +25,14 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
+        // Initializing OpenGL with the triangle primitive
         glBegin(GL_TRIANGLES);
+
+        // Defining the vertices for the triangle
         glVertex2f(-0.5f, -0.5f);
         glVertex2f(0.0f, 0.5f);
         glVertex2f(0.5f, -0.5f);
+
         glEnd();
 
         /* Swap front and back buffers */
